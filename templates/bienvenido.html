@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>¡Bienvenido, {{ username }}!</h2>
+        <p>A FMS WORLD SERIES</p>
+        <p>Has iniciado sesión correctamente.</p>
+        <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+        
+    </div>
+    <div class="wrape">
+    <section>
+        <img src="../static/img/chuty.webp" alt="">
+        <img src="../static/img/nitro.webp" alt="">
+        <img src="../static/img/menor.webp" alt="">
+        <img src="../static/img/aczino.jfif" alt="">
+        <img src="../static/img/gazir.jpg_large" alt="">
+        <img src="../static/img/larrix.avif" alt="">
+        <img src="../static/img/valles t.jfif" alt="">
+        <img src="../static/img/letra.webp" alt="">
+        <img src="../static/img/kodigo.jfif" alt="">
+    </section>
+    </div>
+</body>
+</html>

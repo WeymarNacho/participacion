@@ -1,25 +1,36 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+    background-color: black;
+        height: 120vh; /* Asegura que el body ocupe toda la altura de la ventana */
+        margin: 0; /* Elimina márgenes predeterminados del body */
+        text-align: center;
+        color: black;
+        padding: 35px;
 }
 
 .login-container, .welcome-container {
-    max-width: 400px;
-    margin: 100px auto;
+    float: left;
+    max-width: 300px;
+    margin: 100px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(26, 25, 25);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+    
 }
 
 h2 {
-    color: #333;
+    color: #776565;
 }
-
+p {
+    color: #776565;
+}
+a {
+    text-decoration: none;
+    color: #1f0a7a;
+}
 label {
     display: block;
     font-weight: bold;
@@ -55,3 +66,29 @@ button:hover {
     font-weight: bold;
     margin-bottom: 15px;
 }
+section{
+    float: left;
+    display: inline-flex;
+    margin-top: 50px;
+    width: 600px;
+    height: 430px;
+    padding: 20px;
+    
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+   
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
